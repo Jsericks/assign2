@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sudoku Overview</title>
+		<link rel='stylesheet' type='text/css' href='index.css'/>
+	</head>
+	<body>
+		<h1>Sudoku</h1>
+				<img id='headerImg' src="http://sudokublog.typepad.com/photos/uncategorized/sudoku20050715201203clue.png"/>
+		<h2>Sudoku Rules</h2>
+		<div class='infoDiv'>
+			<ul>
+				<li>Sudoku Rules</li>
+				<ul>
+					<li>Game is played on a 9x9 grid composed of 9 3x3 sub-grids</li>
+					<li>Game table is pre-populated with integers between 1 and 9 <br>
+						leaving open spots to be filled by the player</li>
+					<li>To Win</li>
+					<ul>
+						<li>Each 3x3 grid will be filled with 1-9 a single time</li>
+						<li>Each row and column in the table will be filled with <br>
+							1-9 a single time per row and column</li>
+					</ul>
+				</ul>
+				<li><a href='http://sudokublog.typepad.com/' target='_new'>Sudoku Blog</a></li>
+			</ul>
+		</div>
+		<h2>Preliminary Software Design</h2>
+		<div class='infoDiv'>
+			<ul>
+				<li>Objects List</li>
+				<ul>
+					<li>Space</li>
+					<ul>
+						<li>Value being held in the Space Currently</li>
+						<li>Fixed variable for all pre-populated Spaces</li>
+						<li>Methods getSpace and setSpace</li>
+						<li>Method valid to determine the validity of incoming space values</li>
+						<li>Methods to let the associated Group object know when a value has changed</li>
+					</ul>
+					<li>Group</li>
+					<ul>
+						<li>Representation of the 3x3 group containing references to Space objects</li>
+						<li>Function to determine whether the Group object references all valid input<br>
+							and return boolean to aid solving the Sudoku Table</li>
+					</ul>
+					<li>Table</li>
+					<ul>
+						<li>Generation method to pre-populate the table with some values</li>
+						<li>Clear method to clear the table of user supplied input</li>
+						<li>Column and Row value trackers represented as arrays</li>
+						<li>Method to determine the validity of the whole table by<br>
+							determining the validity of the contained groups, columns, and rows</li>
+					</ul>
+				</ul>
+			</ul>
+		</div>
+		<div class='bottomBar'>
+			<a href='exampleBoard.html'>Example Sudoku Board</a>
+		</div>
+	</body>
+</html>

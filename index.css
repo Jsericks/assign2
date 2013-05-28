@@ -1,0 +1,44 @@
+body
+{
+	background: lightgray;
+	font-family: Lucida Console;
+	font-size: 15px;
+}
+h1
+{
+	font-size: 40px;
+	text-align: center;
+}
+h2
+{
+	font-size: 30px;
+	text-align: center;
+}
+#headerImg
+{
+	height: 150px;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 5px;
+}
+.infoDiv
+{
+	background: white;
+	border: 3px solid black;
+	border-radius: 20px;
+	width: 50%;
+	margin: 0 auto;
+	padding: 8px;
+	text-align: left;
+}
+ul
+{
+	list-style-type: circle;
+}
+.bottomBar
+{
+	text-align: center;
+	padding: 5%;
+}

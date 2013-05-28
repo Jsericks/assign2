@@ -1,0 +1,47 @@
+body
+{
+	background: lightgray;
+	font-family: Lucida Console;
+	font-size: 15px;
+}
+h1
+{
+	font-size: 40px;
+	text-align: center;
+}
+td
+{
+	border: 1px solid black;
+}
+#boardWrapper
+{
+	background: white;
+	border: 3px solid black;
+	height: 297px;
+	width: 297px;
+	margin: 0px auto;
+}
+#board
+{
+	height: 297px;
+	width: 297px;
+	text-align: center;
+	border-collapse: collapse;
+}
+#board td:nth-child(3n+3)
+{
+	border-right: 3px solid black;
+}
+#board tr:nth-child(3n+3)
+{
+	border-bottom: 3px solid black;
+}
+.tableWrapper
+{
+	border: collapse;
+}
+.bottomBar
+{
+	text-align: center;
+	padding: 5%;
+}
